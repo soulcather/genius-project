@@ -36,12 +36,6 @@
     border: none;
     border-radius: 16px;
 
-    @media screen and (min-width: $bp-tablet) {
-      margin: auto;
-      width: 280px;
-      height: 500px;
-    }
-
     @media screen and (min-width: $bp-desktop) {
       width: 600px;
       height: 595px;
