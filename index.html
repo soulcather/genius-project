@@ -60,7 +60,7 @@
             <span class="text-brand">Сучасна</span> пекарня
           </h1>
           <button
-            class="hero-section__button button modal__btn--open"
+            class="modal__btn-hero-section--open hero-section__button button"
             type="button"
           >
             Замовити дзвінок
@@ -312,7 +312,7 @@
           </div>
         </div>
       </section>
-      <section class="contacts-section section" id="contacts-section">
+      <section class="contacts-section" id="contacts-section">
         <div class="container">
           <div class="contacts-section__container">
             <div class="contacts-section__form">
@@ -456,7 +456,7 @@
                   >
                 </li>
               </ul>
-              <div>
+              <div class="footer__address-social-icons">
                 <a href="#">
                   <svg class="footer__address-icon" width="32" height="32">
                     <use href="./images/icons.svg#icon-facebook"></use>
@@ -483,59 +483,74 @@
     <!-- Modal -->
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal__btn--close" type="button">Close</button>
-        <h2 class="modal__title">Замовити дзвінок</h2>
-        <p class="modal__text">
-          Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
-        </p>
-        <form name="modal-form" autocomplete="off">
-          <div class="modal__form-field input">
-            <label class="input__label visually-hidden" for="user-name">
-              Ім’я
-            </label>
-            <input
-              class="input__control"
-              type="text"
-              name="user-name"
-              id="user-name"
-              placeholder="Ім’я"
-            />
-          </div>
-
-          <div class="modal__form-field input">
-            <label class="input__label visually-hidden" for="user-tel">
-              Телефон
-            </label>
-            <input
-              class="input__control"
-              type="tel"
-              name="user-tel"
-              id="user-tel"
-              placeholder="Телефон"
-            />
-          </div>
-
-          <div class="modal__form-field input">
-            <label class="input__label visually-hidden" for="user-email">
-              Електронна пошта
-            </label>
-            <input
-              class="input__control"
-              type="email"
-              name="user-email"
-              id="user-email"
-              placeholder="Електронна пошта"
-            />
-          </div>
-
-          <button class="modal__button button" type="submit">
-            Замовити дзвінок
+        <div class="modal__container">
+          <button class="modal__btn--close" type="button">
+            <svg width="16" height="16">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
           </button>
-          <p class="form-terms">
-            Натискаючи на кнопку я погоджуюсь з
-            <a class="form-terms__link" href="#">політикою конфіденційності</a>
+          <h2 class="modal__title">Замовити дзвінок</h2>
+          <p class="modal__text">
+            Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
           </p>
-        </form>
+          <form name="modal-form" autocomplete="off">
+            <div class="modal__form-field input">
+              <label class="input__label visually-hidden" for="user-name">
+                Ім’я
+              </label>
+              <input
+                class="input__control"
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder="Ім’я"
+              />
+            </div>
+
+            <div class="modal__form-field input">
+              <label class="input__label visually-hidden" for="user-tel">
+                Телефон
+              </label>
+              <input
+                class="input__control"
+                type="tel"
+                name="user-tel"
+                id="user-tel"
+                placeholder="Телефон"
+              />
+            </div>
+
+            <div class="modal__form-field input">
+              <label class="input__label visually-hidden" for="user-email">
+                Електронна пошта
+              </label>
+              <input
+                class="input__control"
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder="Електронна пошта"
+              />
+            </div>
+
+            <button class="modal__button button" type="submit">
+              Замовити дзвінок
+            </button>
+            <p class="form-terms">
+              Натискаючи на кнопку я погоджуюсь з
+              <a class="form-terms__link" href="#"
+                >політикою конфіденційності</a
+              >
+            </p>
+          </form>
+        </div>
+        <div class="modal__bg">
+          <img
+            class="modal__bg-img"
+            src="./images/modal-bred-img.png"
+            alt="Хлібинка"
+          />
+        </div>
       </div>
     </div>
 

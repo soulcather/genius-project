@@ -22,15 +22,15 @@
 
   &::before {
     background-image: url(/images/decor-bread-small.png);
-    width: 180px;
+    width: 185px;
     height: 120px;
     left: 0;
   }
 
   &::after {
     background-image: url(/images/decor-bread-large.png);
-    width: 380px;
-    height: 190px;
+    width: 300px;
+    height: 150px;
     right: 0;
   }
 
@@ -69,6 +69,11 @@
   &__address-list,
   &__address-info {
     flex-grow: 1;
+  }
+
+  &__address-list-social-icons {
+    display: flex;
+    gap: 22px;
   }
 
   &__address-link {
